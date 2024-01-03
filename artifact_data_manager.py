@@ -1,4 +1,4 @@
-import re, traceback, sys
+import re, traceback
 from errors import *
 from artifact_types import *
 import logging
@@ -20,14 +20,13 @@ def extract_table_info(row, artifact_type, info_text, artifact_total_num, artifa
     else:
         print('该文物类型不存在')
 
-    error_messages = []
     # 获取图片链接
     try:
         # img_link = row.find("img", src=re.compile(r'/Uploads/.*\.(jpg|jpeg|png)|https?://.*\.(jpg|jpeg|png)|/Public.*?\.(jpg|jpeg|png)'))
         img_link = row.find("img", src=re.compile(r'https?://.*\.(jpg|jpeg|png)|/Public.*?\.(jpg|jpeg|png)'))
         if img_link is None:
             error_message = (
-                f'图片链接未找到——'
+                f'图片链接获取失败——'
                 f'{artifact_total_num} - {type_mapping[artifact_type]}-第 {artifact_num} 件文物-'
                 f'第 {page} 页第 {line_num} 行'
                 '\n\n' + '-'*80 + '\n'

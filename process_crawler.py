@@ -2,6 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from artifact_types import *
+import sys
 import time, artifact_details_crawler
 import excel_writer, csv_writer
 
@@ -36,28 +37,32 @@ box_elements = driver.find_elements(By.CLASS_NAME, 'box')
 # 找到所有包含 <a> 标签的 <div> 元素
 div_elements = driver.find_elements(By.XPATH, '//div[contains(@class, "box")]//div[contains(@class, "div")]/a')
   
-
 href_list = [div_element.get_attribute("href") for div_element in div_elements if div_element.get_attribute("href") not in unwanted_urls]  
 
 # 逐个点击链接，用新标签页打开
 type_num = 0
-for link in href_list:
-    # 获取当前窗口句柄
-    current_window_handle = driver.current_window_handle
+try:
+    for link in href_list:
+        # 获取当前窗口句柄
+        current_window_handle = driver.current_window_handle
 
-    type_num += 1
+        type_num += 1
 
-    if link != 'https://www.dpm.org.cn/explore/ancients.html':
-        continue
+        if link != 'https://www.dpm.org.cn/explore/ancients.html':
+            continue
 
-    artifact_type = link.split('/')[-1].split('.')[0]
+        artifact_type = link.split('/')[-1].split('.')[0]
 
-    print('*'*50 + f'第 {type_num} 个文物类型——{type_mapping[artifact_type]}' + '*'*50)
-    # 进一步提取信息
-    artifact_details_crawler.main(link, type_num)
+        print('*'*50 + f'第 {type_num} 个文物类型——{type_mapping[artifact_type]}' + '*'*50)
+        # 进一步提取信息
+        artifact_details_crawler.main(link, type_num)
 
-    driver.close()
-    driver.switch_to.window(current_window_handle)
+        driver.close()
+        driver.switch_to.window(current_window_handle)
+
+except KeyboardInterrupt:
+        print("程序终止：手动中止程序")
+        sys.exit(0)
 
 print('非常成功！！！')
 print('文物已全部处理完成')

@@ -1,4 +1,4 @@
-import re, time, logging, traceback
+import re, time, logging, traceback, sys
 from bs4 import BeautifulSoup
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -42,10 +42,9 @@ def process_table(parent_div):
 
 
 def process_artifact_row(row, page, line_num):
-    # 获取文物简介链接
     link = row.find("a", href=re.compile(r'/(collection|explore|ancient)/.+?/\d+'))
     href = link["href"]
-    intro_url = "http://www.dpm.org.cn" + href 
+    intro_url = "http://www.dpm.org.cn" + href
 
     # 记录当前窗口句柄
     current_window_handle = global_driver.current_window_handle
@@ -76,20 +75,26 @@ def process_artifact_details(row, page, line_num):
     artifact_html = global_driver.page_source
     artifact_soup = BeautifulSoup(artifact_html, "html.parser") 
 
+    artifact_total_num += 1
+    artifact_num += 1
+    ancient_num += 1
+
     # 获取文物简介并创建文物对象
     content_edit_div = artifact_soup.find('div', class_='content_edit')
     if content_edit_div:
         info_tags = content_edit_div.find_all('p')
-        info_text = extract_artifacts_info(info_tags)
+        # info_text = extract_artifacts_info(info_tags)
+        info_text = None
 
         try:
             if not info_text:
                 error_message = (
                     f'文物简介未找到——'
-                    f'{artifact_total_num} - {type_mapping[current_artifact_type]}-第 {artifact_num} 件文物-'
+                    f'{artifact_total_num} - {type_mapping[current_artifact_type]}'
+                    f'-{ancient_text + "-" if current_artifact_type == Ancients else ""}第 {artifact_num} 件文物-'
                     f'第 {page} 页第 {line_num} 行'
                     '\n\n' + '-'*80 + '\n'
-                )
+                )  
                 raise ArtifactIntroError(error_message)
         except ArtifactIntroError as e:
             # 在发生异常时的处理逻辑
@@ -97,9 +102,6 @@ def process_artifact_details(row, page, line_num):
             print(f"以下文物在获取文物简介时发生异常:")
             info_text  = '文物简介异常'
         
-        artifact_total_num += 1
-        artifact_num += 1
-        ancient_num += 1
 
         artifact = extract_table_info(row, current_artifact_type, info_text, artifact_total_num, artifact_num, page, line_num)
 

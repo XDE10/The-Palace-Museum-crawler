@@ -1,0 +1,160 @@
+2024-01-03 16:27:59,839 [ERROR]: 以下文物在获取文物简介时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 97, in process_artifact_details
+    raise ArtifactIntroError(error_message)
+errors.ArtifactIntroError: 文物简介未找到——1 - 古籍-第 1 件文物-第 1 页第 1 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:27:59,847 [ERROR]: 以下文物在处理图片链接时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+    raise ImageLinkError(error_message)
+errors.ImageLinkError: 图片链接获取失败——1 - 古籍-第 1 件文物-第 1 页第 1 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:28:05,626 [ERROR]: 以下文物在获取文物简介时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 97, in process_artifact_details
+    raise ArtifactIntroError(error_message)
+errors.ArtifactIntroError: 文物简介未找到——2 - 古籍-第 2 件文物-第 1 页第 2 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:28:05,626 [ERROR]: 以下文物在处理图片链接时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+    raise ImageLinkError(error_message)
+errors.ImageLinkError: 图片链接获取失败——2 - 古籍-第 2 件文物-第 1 页第 2 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:28:11,619 [ERROR]: 以下文物在获取文物简介时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 97, in process_artifact_details
+    raise ArtifactIntroError(error_message)
+errors.ArtifactIntroError: 文物简介未找到——3 - 古籍-第 3 件文物-第 1 页第 3 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:28:11,619 [ERROR]: 以下文物在处理图片链接时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+    raise ImageLinkError(error_message)
+errors.ImageLinkError: 图片链接获取失败——3 - 古籍-第 3 件文物-第 1 页第 3 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:28:17,738 [ERROR]: 以下文物在获取文物简介时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 97, in process_artifact_details
+    raise ArtifactIntroError(error_message)
+errors.ArtifactIntroError: 文物简介未找到——4 - 古籍-第 4 件文物-第 1 页第 4 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:28:17,738 [ERROR]: 以下文物在处理图片链接时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+    raise ImageLinkError(error_message)
+errors.ImageLinkError: 图片链接获取失败——4 - 古籍-第 4 件文物-第 1 页第 4 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:34:35,855 [ERROR]: 以下文物在获取文物简介时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 98, in process_artifact_details
+    raise ArtifactIntroError(error_message)
+errors.ArtifactIntroError: 文物简介未找到——1 - 古籍-第 1 件文物-第 1 页第 1 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:34:35,855 [ERROR]: 以下文物在处理图片链接时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+    raise ImageLinkError(error_message)
+errors.ImageLinkError: 图片链接获取失败——1 - 古籍-第 1 件文物-第 1 页第 1 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:34:41,621 [ERROR]: 以下文物在获取文物简介时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 98, in process_artifact_details
+    raise ArtifactIntroError(error_message)
+errors.ArtifactIntroError: 文物简介未找到——2 - 古籍-第 2 件文物-第 1 页第 2 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:34:41,621 [ERROR]: 以下文物在处理图片链接时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+    raise ImageLinkError(error_message)
+errors.ImageLinkError: 图片链接获取失败——2 - 古籍-第 2 件文物-第 1 页第 2 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:34:47,554 [ERROR]: 以下文物在获取文物简介时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 98, in process_artifact_details
+    raise ArtifactIntroError(error_message)
+errors.ArtifactIntroError: 文物简介未找到——3 - 古籍-第 3 件文物-第 1 页第 3 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:34:47,554 [ERROR]: 以下文物在处理图片链接时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+    raise ImageLinkError(error_message)
+errors.ImageLinkError: 图片链接获取失败——3 - 古籍-第 3 件文物-第 1 页第 3 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:34:53,621 [ERROR]: 以下文物在获取文物简介时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 98, in process_artifact_details
+    raise ArtifactIntroError(error_message)
+errors.ArtifactIntroError: 文物简介未找到——4 - 古籍-第 4 件文物-第 1 页第 4 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:34:53,621 [ERROR]: 以下文物在处理图片链接时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+    raise ImageLinkError(error_message)
+errors.ImageLinkError: 图片链接获取失败——4 - 古籍-第 4 件文物-第 1 页第 4 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:39:15,264 [ERROR]: 以下文物在获取文物简介时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 98, in process_artifact_details
+    raise ArtifactIntroError(error_message)
+errors.ArtifactIntroError: 文物简介未找到——1 - 古籍-第 1 件文物-第 1 页第 1 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:39:15,264 [ERROR]: 以下文物在处理图片链接时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+    raise ImageLinkError(error_message)
+errors.ImageLinkError: 图片链接获取失败——1 - 古籍-第 1 件文物-第 1 页第 1 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:39:20,958 [ERROR]: 以下文物在获取文物简介时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 98, in process_artifact_details
+    raise ArtifactIntroError(error_message)
+errors.ArtifactIntroError: 文物简介未找到——2 - 古籍-第 2 件文物-第 1 页第 2 行
+
+--------------------------------------------------------------------------------
+
+2024-01-03 16:39:20,958 [ERROR]: 以下文物在处理图片链接时发生异常
+Traceback (most recent call last):
+  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+    raise ImageLinkError(error_message)
+errors.ImageLinkError: 图片链接获取失败——2 - 古籍-第 2 件文物-第 1 页第 2 行
+
+--------------------------------------------------------------------------------
+

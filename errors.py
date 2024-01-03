@@ -6,10 +6,6 @@ class ImageLinkError(Exception):
     """图片链接获取失败异常。"""
     pass
 
-class ArtifactLinkError(Exception):
-    """文物简介链接获取失败异常。"""
-    pass
-
 class ArtifactIntroError(Exception):
     """文物简介获取失败异常。"""
     pass

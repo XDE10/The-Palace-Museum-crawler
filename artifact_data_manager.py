@@ -7,7 +7,6 @@ from errors import *
 logging.basicConfig(filename='error_log.txt', level=logging.ERROR, format='%(asctime)s [%(levelname)s]: %(message)s', encoding='utf-8')
 
 def extract_table_info(row, artifact_type, info_text, artifact_total_num, artifact_num, page, line_num):
-    error_messages = []
     # 创建文物对象
     columns = row.find_all('td')
     if artifact_type in class_mapping:
@@ -22,8 +21,8 @@ def extract_table_info(row, artifact_type, info_text, artifact_total_num, artifa
 
     # 获取图片链接
     try:
-        # img_link = row.find("img", src=re.compile(r'/Uploads/.*\.(jpg|jpeg|png)|https?://.*\.(jpg|jpeg|png)|/Public.*?\.(jpg|jpeg|png)'))
-        img_link = row.find("img", src=re.compile(r'https?://.*\.(jpg|jpeg|png)|/Public.*?\.(jpg|jpeg|png)'))
+        img_link = row.find("img", src=re.compile(r'/Uploads/.*\.(jpg|jpeg|png)|https?://.*\.(jpg|jpeg|png)|/Public.*?\.(jpg|jpeg|png)'))
+        #img_link = row.find("img", src=re.compile(r'https?://.*\.(jpg|jpeg|png)|/Public.*?\.(jpg|jpeg|png)'))
         if img_link is None:
             error_message = (
                 f'图片链接获取失败——'

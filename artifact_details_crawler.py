@@ -83,9 +83,7 @@ def process_artifact_details(row, page, line_num):
     content_edit_div = artifact_soup.find('div', class_='content_edit')
     if content_edit_div:
         info_tags = content_edit_div.find_all('p')
-        # info_text = extract_artifacts_info(info_tags)
-        info_text = None
-
+        info_text = extract_artifacts_info(info_tags)
         try:
             if not info_text:
                 error_message = (
@@ -264,14 +262,12 @@ def main(url, artifact_type_number):
             html = global_driver.page_source
             soup = BeautifulSoup(html, "html.parser")
 
-            print('*'*50 + f'第 {artifact_type_number} 个文物类型——{type_mapping[current_artifact_type]}-第 {page} 页')
+            page = extract_page_number()
+            print('*'*50 + f'第 {artifact_type_number} 个文物类型——{type_mapping[current_artifact_type]}-第 {page} 页' + '*'*50 )
             parent_div = soup.find('div', class_='wrap parentsHtml')
             process_table(parent_div)
-
-            page = extract_page_number()
+            
             print('*'*50 + f'第 {artifact_type_number} 个文物类型——{type_mapping[current_artifact_type]}-第 {page} 页已完成' + '*'*50 + '\n')
-            break
-
             try:
                 click_next_page()
             except Exception as e:
@@ -301,5 +297,3 @@ def main(url, artifact_type_number):
 
 if __name__ == "__main__":
     main()
-
-

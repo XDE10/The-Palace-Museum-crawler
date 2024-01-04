@@ -2,9 +2,11 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 from artifact_types import *
-import sys
+import sys, logging
 import time, artifact_details_crawler
 import excel_writer, csv_writer
+
+logging.basicConfig(filename='error_log.txt', level=logging.ERROR, format='%(asctime)s [%(levelname)s]: %(message)s', encoding='utf-8')
 
 # 创建ChromeOptions对象并启用无头模式
 chrome_options = Options()
@@ -48,9 +50,6 @@ try:
 
         type_num += 1
 
-        if link != 'https://www.dpm.org.cn/explore/ancients.html':
-            continue
-
         artifact_type = link.split('/')[-1].split('.')[0]
 
         print('*'*50 + f'第 {type_num} 个文物类型——{type_mapping[artifact_type]}' + '*'*50)
@@ -61,11 +60,16 @@ try:
         driver.switch_to.window(current_window_handle)
 
 except KeyboardInterrupt:
-        print("程序终止：手动中止程序")
-        sys.exit(0)
+    logging.error(f"程序终止：手动中止程序" + '\n\n' + '-'*80 + '\n')
+    print("程序终止：手动中止程序")
+    sys.exit(1)
 
-print('非常成功！！！')
-print('文物已全部处理完成')
+except TimeoutError:
+    logging.error(f"网页超时错误" + '\n\n' + '-'*80 + '\n')
+    print("网页超时错误")
+    sys.exit(1)
+
+print('*'*50 + '文物已全部处理完成'+ '*'*50)
 
 # 关闭浏览器
 driver.quit()

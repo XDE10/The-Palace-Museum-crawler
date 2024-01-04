@@ -1,160 +1,222 @@
-2024-01-03 16:27:59,839 [ERROR]: 以下文物在获取文物简介时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 97, in process_artifact_details
-    raise ArtifactIntroError(error_message)
-errors.ArtifactIntroError: 文物简介未找到——1 - 古籍-第 1 件文物-第 1 页第 1 行
+2024-01-03 18:37:42,102 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/handwritings.html 时发生异常: 'NoneType' object has no attribute 'text'
+2024-01-03 18:37:42,102 [ERROR]: 处理链接 https://www.dpm.org.cn/explore/ancients.html 时发生异常: 'NoneType' object has no attribute 'text'
+2024-01-03 18:37:45,740 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/bronzes.html 时发生异常: 'NoneType' object has no attribute 'text'
+2024-01-03 18:37:46,023 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/lacquerwares.html 时发生异常: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A9E72142+3514994]
+	(No symbol) [0x00007FF7A9A90CE2]
+	(No symbol) [0x00007FF7A99374C3]
+	(No symbol) [0x00007FF7A997412A]
+	(No symbol) [0x00007FF7A99A5EC9]
+	(No symbol) [0x00007FF7A999ECA2]
+	(No symbol) [0x00007FF7A999E5E3]
+	(No symbol) [0x00007FF7A9906315]
+	GetHandleVerifier [0x00007FF7A9E9E16B+3695259]
+	GetHandleVerifier [0x00007FF7A9EF6737+4057191]
+	GetHandleVerifier [0x00007FF7A9EEE4E3+4023827]
+	GetHandleVerifier [0x00007FF7A9BC04F9+689705]
+	(No symbol) [0x00007FF7A9A9C048]
+	(No symbol) [0x00007FF7A9905103]
+	GetHandleVerifier [0x00007FF7A9F3E958+4352648]
+	BaseThreadInitThunk [0x00007FFF0045257D+29]
+	RtlUserThreadStart [0x00007FFF0100AA58+40]
 
---------------------------------------------------------------------------------
+2024-01-03 18:37:46,218 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/jewelrys.html 时发生异常: 'NoneType' object has no attribute 'text'
+2024-01-03 18:37:46,287 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/utensils.html 时发生异常: 'NoneType' object has no attribute 'text'
+2024-01-03 18:37:46,291 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/glasses.html 时发生异常: 'NoneType' object has no attribute 'text'
+2024-01-03 18:37:46,291 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/musics.html 时发生异常: 'NoneType' object has no attribute 'text'
+2024-01-03 18:37:46,300 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/paints.html 时发生异常: 'NoneType' object has no attribute 'text'
+2024-01-03 18:37:46,364 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/tinwares.html 时发生异常: 'NoneType' object has no attribute 'text'
+2024-01-03 18:37:48,382 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/enamels.html 时发生异常: 'NoneType' object has no attribute 'text'
+2024-01-03 18:37:48,382 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/jades.html 时发生异常: 'NoneType' object has no attribute 'text'
+2024-01-03 18:37:48,382 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/foreigns.html 时发生异常: 'NoneType' object has no attribute 'text'
+2024-01-03 18:37:48,402 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/bamboos.html 时发生异常: 'NoneType' object has no attribute 'text'
+2024-01-03 18:37:48,489 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/impress.html 时发生异常: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A9E72142+3514994]
+	(No symbol) [0x00007FF7A9A90CE2]
+	(No symbol) [0x00007FF7A99374C3]
+	(No symbol) [0x00007FF7A9974749]
+	(No symbol) [0x00007FF7A9975C64]
+	GetHandleVerifier [0x00007FF7A9E9E16B+3695259]
+	GetHandleVerifier [0x00007FF7A9EF6737+4057191]
+	GetHandleVerifier [0x00007FF7A9EEE4E3+4023827]
+	GetHandleVerifier [0x00007FF7A9BC04F9+689705]
+	(No symbol) [0x00007FF7A9A9C048]
+	(No symbol) [0x00007FF7A9A98044]
+	(No symbol) [0x00007FF7A9A981C9]
+	(No symbol) [0x00007FF7A9A888C4]
+	BaseThreadInitThunk [0x00007FFF0045257D+29]
+	RtlUserThreadStart [0x00007FFF0100AA58+40]
 
-2024-01-03 16:27:59,847 [ERROR]: 以下文物在处理图片链接时发生异常
+2024-01-03 18:37:48,489 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/defenses.html 时发生异常: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A9E72142+3514994]
+	(No symbol) [0x00007FF7A9A90CE2]
+	(No symbol) [0x00007FF7A99374C3]
+	(No symbol) [0x00007FF7A9974749]
+	(No symbol) [0x00007FF7A9975C64]
+	GetHandleVerifier [0x00007FF7A9E9E16B+3695259]
+	GetHandleVerifier [0x00007FF7A9EF6737+4057191]
+	GetHandleVerifier [0x00007FF7A9EEE4E3+4023827]
+	GetHandleVerifier [0x00007FF7A9BC04F9+689705]
+	(No symbol) [0x00007FF7A9A9C048]
+	(No symbol) [0x00007FF7A9A98044]
+	(No symbol) [0x00007FF7A9A981C9]
+	(No symbol) [0x00007FF7A9A888C4]
+	BaseThreadInitThunk [0x00007FFF0045257D+29]
+	RtlUserThreadStart [0x00007FFF0100AA58+40]
+
+2024-01-03 18:37:48,489 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/religions.html 时发生异常: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A9E72142+3514994]
+	(No symbol) [0x00007FF7A9A90CE2]
+	(No symbol) [0x00007FF7A99374C3]
+	(No symbol) [0x00007FF7A9974749]
+	(No symbol) [0x00007FF7A9975C64]
+	GetHandleVerifier [0x00007FF7A9E9E16B+3695259]
+	GetHandleVerifier [0x00007FF7A9EF6737+4057191]
+	GetHandleVerifier [0x00007FF7A9EEE4E3+4023827]
+	GetHandleVerifier [0x00007FF7A9BC04F9+689705]
+	(No symbol) [0x00007FF7A9A9C048]
+	(No symbol) [0x00007FF7A9A98044]
+	(No symbol) [0x00007FF7A9A981C9]
+	(No symbol) [0x00007FF7A9A888C4]
+	BaseThreadInitThunk [0x00007FFF0045257D+29]
+	RtlUserThreadStart [0x00007FFF0100AA58+40]
+
+2024-01-03 18:37:48,489 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/gears.html 时发生异常: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A9E72142+3514994]
+	(No symbol) [0x00007FF7A9A90CE2]
+	(No symbol) [0x00007FF7A99374C3]
+	(No symbol) [0x00007FF7A9974749]
+	(No symbol) [0x00007FF7A9975C64]
+	GetHandleVerifier [0x00007FF7A9E9E16B+3695259]
+	GetHandleVerifier [0x00007FF7A9EF6737+4057191]
+	GetHandleVerifier [0x00007FF7A9EEE4E3+4023827]
+	GetHandleVerifier [0x00007FF7A9BC04F9+689705]
+	(No symbol) [0x00007FF7A9A9C048]
+	(No symbol) [0x00007FF7A9A98044]
+	(No symbol) [0x00007FF7A9A981C9]
+	(No symbol) [0x00007FF7A9A888C4]
+	BaseThreadInitThunk [0x00007FFF0045257D+29]
+	RtlUserThreadStart [0x00007FFF0100AA58+40]
+
+2024-01-03 18:37:48,489 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/embroiders.html 时发生异常: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A9E72142+3514994]
+	(No symbol) [0x00007FF7A9A90CE2]
+	(No symbol) [0x00007FF7A99374C3]
+	(No symbol) [0x00007FF7A9974749]
+	(No symbol) [0x00007FF7A9975C64]
+	GetHandleVerifier [0x00007FF7A9E9E16B+3695259]
+	GetHandleVerifier [0x00007FF7A9EF6737+4057191]
+	GetHandleVerifier [0x00007FF7A9EEE4E3+4023827]
+	GetHandleVerifier [0x00007FF7A9BC04F9+689705]
+	(No symbol) [0x00007FF7A9A9C048]
+	(No symbol) [0x00007FF7A9A98044]
+	(No symbol) [0x00007FF7A9A981C9]
+	(No symbol) [0x00007FF7A9A888C4]
+	BaseThreadInitThunk [0x00007FFF0045257D+29]
+	RtlUserThreadStart [0x00007FFF0100AA58+40]
+
+2024-01-03 18:37:48,506 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/studies.html 时发生异常: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A9E72142+3514994]
+	(No symbol) [0x00007FF7A9A90CE2]
+	(No symbol) [0x00007FF7A99374C3]
+	(No symbol) [0x00007FF7A9974749]
+	(No symbol) [0x00007FF7A9975C64]
+	GetHandleVerifier [0x00007FF7A9E9E16B+3695259]
+	GetHandleVerifier [0x00007FF7A9EF6737+4057191]
+	GetHandleVerifier [0x00007FF7A9EEE4E3+4023827]
+	GetHandleVerifier [0x00007FF7A9BC04F9+689705]
+	(No symbol) [0x00007FF7A9A9C048]
+	(No symbol) [0x00007FF7A9A98044]
+	(No symbol) [0x00007FF7A9A981C9]
+	(No symbol) [0x00007FF7A9A888C4]
+	BaseThreadInitThunk [0x00007FFF0045257D+29]
+	RtlUserThreadStart [0x00007FFF0100AA58+40]
+
+2024-01-03 18:37:48,623 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/sculptures.html 时发生异常: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A9E72142+3514994]
+	(No symbol) [0x00007FF7A9A90CE2]
+	(No symbol) [0x00007FF7A99374C3]
+	(No symbol) [0x00007FF7A9974749]
+	(No symbol) [0x00007FF7A9975C64]
+	GetHandleVerifier [0x00007FF7A9E9E16B+3695259]
+	GetHandleVerifier [0x00007FF7A9EF6737+4057191]
+	GetHandleVerifier [0x00007FF7A9EEE4E3+4023827]
+	GetHandleVerifier [0x00007FF7A9BC04F9+689705]
+	(No symbol) [0x00007FF7A9A9C048]
+	(No symbol) [0x00007FF7A9A98044]
+	(No symbol) [0x00007FF7A9A981C9]
+	(No symbol) [0x00007FF7A9A888C4]
+	BaseThreadInitThunk [0x00007FFF0045257D+29]
+	RtlUserThreadStart [0x00007FFF0100AA58+40]
+
+2024-01-03 18:38:04,816 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/clocks.html 时发生异常: Message: invalid session id
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A9E72142+3514994]
+	(No symbol) [0x00007FF7A9A90CE2]
+	(No symbol) [0x00007FF7A99374C3]
+	(No symbol) [0x00007FF7A9974749]
+	(No symbol) [0x00007FF7A9975C64]
+	GetHandleVerifier [0x00007FF7A9E9E16B+3695259]
+	GetHandleVerifier [0x00007FF7A9EF6737+4057191]
+	GetHandleVerifier [0x00007FF7A9EEE4E3+4023827]
+	GetHandleVerifier [0x00007FF7A9BC04F9+689705]
+	(No symbol) [0x00007FF7A9A9C048]
+	(No symbol) [0x00007FF7A9A98044]
+	(No symbol) [0x00007FF7A9A981C9]
+	(No symbol) [0x00007FF7A9A888C4]
+	BaseThreadInitThunk [0x00007FFF0045257D+29]
+	RtlUserThreadStart [0x00007FFF0100AA58+40]
+
+2024-01-03 18:38:06,479 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/seals.html 时发生异常: HTTPConnectionPool(host='localhost', port=2963): Max retries exceeded with url: /session/83fd2a2d2f09bd412ef2c94804b617b0/source (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028BA699D150>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2024-01-03 18:38:09,598 [ERROR]: 处理链接 https://www.dpm.org.cn/explore/buildings.html 时发生异常: HTTPConnectionPool(host='localhost', port=2963): Max retries exceeded with url: /session/83fd2a2d2f09bd412ef2c94804b617b0/source (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028BA6988750>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2024-01-03 18:38:15,112 [ERROR]: 处理链接 https://www.dpm.org.cn/collection/ceramics.html 时发生异常: HTTPConnectionPool(host='localhost', port=2963): Max retries exceeded with url: /session/83fd2a2d2f09bd412ef2c94804b617b0/window (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000028BA6989990>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。'))
+2024-01-03 18:39:28,932 [ERROR]: 程序终止：手动中止程序
+2024-01-03 18:39:49,977 [ERROR]: 以下文物在处理图片链接时发生异常
 Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+  File "C:\Users\Mr.Z\Desktop\The-Palace-Museum-crawler\artifact_data_manager.py", line 33, in extract_table_info
     raise ImageLinkError(error_message)
-errors.ImageLinkError: 图片链接获取失败——1 - 古籍-第 1 件文物-第 1 页第 1 行
+errors.ImageLinkError: 图片链接获取失败——1 - 陶瓷-第 1 件文物-第 1 页第 1 行
 
 --------------------------------------------------------------------------------
 
-2024-01-03 16:28:05,626 [ERROR]: 以下文物在获取文物简介时发生异常
+2024-01-03 18:39:56,020 [ERROR]: 以下文物在处理图片链接时发生异常
 Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 97, in process_artifact_details
-    raise ArtifactIntroError(error_message)
-errors.ArtifactIntroError: 文物简介未找到——2 - 古籍-第 2 件文物-第 1 页第 2 行
-
---------------------------------------------------------------------------------
-
-2024-01-03 16:28:05,626 [ERROR]: 以下文物在处理图片链接时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+  File "C:\Users\Mr.Z\Desktop\The-Palace-Museum-crawler\artifact_data_manager.py", line 33, in extract_table_info
     raise ImageLinkError(error_message)
-errors.ImageLinkError: 图片链接获取失败——2 - 古籍-第 2 件文物-第 1 页第 2 行
+errors.ImageLinkError: 图片链接获取失败——2 - 陶瓷-第 2 件文物-第 1 页第 2 行
 
 --------------------------------------------------------------------------------
 
-2024-01-03 16:28:11,619 [ERROR]: 以下文物在获取文物简介时发生异常
+2024-01-03 18:40:02,127 [ERROR]: 以下文物在处理图片链接时发生异常
 Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 97, in process_artifact_details
-    raise ArtifactIntroError(error_message)
-errors.ArtifactIntroError: 文物简介未找到——3 - 古籍-第 3 件文物-第 1 页第 3 行
-
---------------------------------------------------------------------------------
-
-2024-01-03 16:28:11,619 [ERROR]: 以下文物在处理图片链接时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+  File "C:\Users\Mr.Z\Desktop\The-Palace-Museum-crawler\artifact_data_manager.py", line 33, in extract_table_info
     raise ImageLinkError(error_message)
-errors.ImageLinkError: 图片链接获取失败——3 - 古籍-第 3 件文物-第 1 页第 3 行
+errors.ImageLinkError: 图片链接获取失败——3 - 陶瓷-第 3 件文物-第 1 页第 3 行
 
 --------------------------------------------------------------------------------
 
-2024-01-03 16:28:17,738 [ERROR]: 以下文物在获取文物简介时发生异常
+2024-01-03 18:40:08,335 [ERROR]: 以下文物在处理图片链接时发生异常
 Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 97, in process_artifact_details
-    raise ArtifactIntroError(error_message)
-errors.ArtifactIntroError: 文物简介未找到——4 - 古籍-第 4 件文物-第 1 页第 4 行
-
---------------------------------------------------------------------------------
-
-2024-01-03 16:28:17,738 [ERROR]: 以下文物在处理图片链接时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+  File "C:\Users\Mr.Z\Desktop\The-Palace-Museum-crawler\artifact_data_manager.py", line 33, in extract_table_info
     raise ImageLinkError(error_message)
-errors.ImageLinkError: 图片链接获取失败——4 - 古籍-第 4 件文物-第 1 页第 4 行
+errors.ImageLinkError: 图片链接获取失败——4 - 陶瓷-第 4 件文物-第 1 页第 4 行
 
 --------------------------------------------------------------------------------
 
-2024-01-03 16:34:35,855 [ERROR]: 以下文物在获取文物简介时发生异常
+2024-01-03 18:40:14,510 [ERROR]: 以下文物在处理图片链接时发生异常
 Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 98, in process_artifact_details
-    raise ArtifactIntroError(error_message)
-errors.ArtifactIntroError: 文物简介未找到——1 - 古籍-第 1 件文物-第 1 页第 1 行
-
---------------------------------------------------------------------------------
-
-2024-01-03 16:34:35,855 [ERROR]: 以下文物在处理图片链接时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
+  File "C:\Users\Mr.Z\Desktop\The-Palace-Museum-crawler\artifact_data_manager.py", line 33, in extract_table_info
     raise ImageLinkError(error_message)
-errors.ImageLinkError: 图片链接获取失败——1 - 古籍-第 1 件文物-第 1 页第 1 行
+errors.ImageLinkError: 图片链接获取失败——5 - 陶瓷-第 5 件文物-第 1 页第 5 行
 
 --------------------------------------------------------------------------------
 
-2024-01-03 16:34:41,621 [ERROR]: 以下文物在获取文物简介时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 98, in process_artifact_details
-    raise ArtifactIntroError(error_message)
-errors.ArtifactIntroError: 文物简介未找到——2 - 古籍-第 2 件文物-第 1 页第 2 行
-
---------------------------------------------------------------------------------
-
-2024-01-03 16:34:41,621 [ERROR]: 以下文物在处理图片链接时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
-    raise ImageLinkError(error_message)
-errors.ImageLinkError: 图片链接获取失败——2 - 古籍-第 2 件文物-第 1 页第 2 行
-
---------------------------------------------------------------------------------
-
-2024-01-03 16:34:47,554 [ERROR]: 以下文物在获取文物简介时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 98, in process_artifact_details
-    raise ArtifactIntroError(error_message)
-errors.ArtifactIntroError: 文物简介未找到——3 - 古籍-第 3 件文物-第 1 页第 3 行
-
---------------------------------------------------------------------------------
-
-2024-01-03 16:34:47,554 [ERROR]: 以下文物在处理图片链接时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
-    raise ImageLinkError(error_message)
-errors.ImageLinkError: 图片链接获取失败——3 - 古籍-第 3 件文物-第 1 页第 3 行
-
---------------------------------------------------------------------------------
-
-2024-01-03 16:34:53,621 [ERROR]: 以下文物在获取文物简介时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 98, in process_artifact_details
-    raise ArtifactIntroError(error_message)
-errors.ArtifactIntroError: 文物简介未找到——4 - 古籍-第 4 件文物-第 1 页第 4 行
-
---------------------------------------------------------------------------------
-
-2024-01-03 16:34:53,621 [ERROR]: 以下文物在处理图片链接时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
-    raise ImageLinkError(error_message)
-errors.ImageLinkError: 图片链接获取失败——4 - 古籍-第 4 件文物-第 1 页第 4 行
-
---------------------------------------------------------------------------------
-
-2024-01-03 16:39:15,264 [ERROR]: 以下文物在获取文物简介时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 98, in process_artifact_details
-    raise ArtifactIntroError(error_message)
-errors.ArtifactIntroError: 文物简介未找到——1 - 古籍-第 1 件文物-第 1 页第 1 行
-
---------------------------------------------------------------------------------
-
-2024-01-03 16:39:15,264 [ERROR]: 以下文物在处理图片链接时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
-    raise ImageLinkError(error_message)
-errors.ImageLinkError: 图片链接获取失败——1 - 古籍-第 1 件文物-第 1 页第 1 行
-
---------------------------------------------------------------------------------
-
-2024-01-03 16:39:20,958 [ERROR]: 以下文物在获取文物简介时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_details_crawler.py", line 98, in process_artifact_details
-    raise ArtifactIntroError(error_message)
-errors.ArtifactIntroError: 文物简介未找到——2 - 古籍-第 2 件文物-第 1 页第 2 行
-
---------------------------------------------------------------------------------
-
-2024-01-03 16:39:20,958 [ERROR]: 以下文物在处理图片链接时发生异常
-Traceback (most recent call last):
-  File "C:\Users\Mr.Z\Desktop\故宫爬虫\artifact_data_manager.py", line 34, in extract_table_info
-    raise ImageLinkError(error_message)
-errors.ImageLinkError: 图片链接获取失败——2 - 古籍-第 2 件文物-第 1 页第 2 行
-
---------------------------------------------------------------------------------
-
+2024-01-03 18:40:19,387 [ERROR]: 程序终止：手动中止程序
